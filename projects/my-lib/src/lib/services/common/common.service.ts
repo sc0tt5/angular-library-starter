@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class CommonService {
-  constructor() {}
+    constructor() {}
 
-  getTestOne() {
-    console.log('getTestOne:::', true);
-  }
+    getTestOne() {
+        console.log('getTestOne:::', true);
+    }
 
-  getTestTwo() {
-    console.log('getTestTwo:::', true);
-  }
+    getTestTwo() {
+        console.log('getTestTwo:::', true);
+    }
 }

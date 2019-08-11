@@ -7,7 +7,7 @@ import { DemoButtonAComponent } from './demo-button-a.component';
 export const ROUTES: Routes = [{ path: '', component: DemoButtonAComponent }];
 
 @NgModule({
-  imports: [ButtonAModule, RouterModule.forChild(ROUTES)],
-  declarations: [DemoButtonAComponent]
+    imports: [ButtonAModule, RouterModule.forChild(ROUTES)],
+    declarations: [DemoButtonAComponent]
 })
 export class DemoButtonAModule {}

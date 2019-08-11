@@ -5,30 +5,30 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class SessionService {
-  private languageCode: string;
+    private languageCode: string;
 
-  set locale(value: string) {
-    this.languageCode = value;
-  }
-
-  get locale(): string {
-    return this.languageCode || 'en-US';
-  }
-
-  registerCulture(culture: string) {
-    if (!culture) {
-      return;
+    set locale(value: string) {
+        this.languageCode = value;
     }
-    this.locale = culture;
 
-    // register locale data
-    switch (culture) {
-      case 'nb-NO':
-        registerLocaleData(localeNorwegian);
-        break;
-      case 'sv-SE':
-        registerLocaleData(localeSwedish);
-        break;
+    get locale(): string {
+        return this.languageCode || 'en-US';
     }
-  }
+
+    registerCulture(culture: string) {
+        if (!culture) {
+            return;
+        }
+        this.locale = culture;
+
+        // register locale data
+        switch (culture) {
+            case 'nb-NO':
+                registerLocaleData(localeNorwegian);
+                break;
+            case 'sv-SE':
+                registerLocaleData(localeSwedish);
+                break;
+        }
+    }
 }
