@@ -1,6 +1,8 @@
 {
     "name": "lib-demo",
-    "version": "0.0.0",
+    "version": "0.0.1",
+    "author": "Scott Robertson (https://github.com/sc0tt5)",
+    "license": "GNU GPL v3",
     "scripts": {
         "ng": "ng",
         "start": "ng serve --open --watch",
