@@ -3,22 +3,22 @@ import { SessionService } from 'my-lib';
 
 @Component({
     selector: 'demo-pipes',
-    styleUrls: ['./pipes-demo.component.scss'],
-    templateUrl: './pipes-demo.component.html'
+    styleUrls: ['./demo-pipes.component.scss'],
+    templateUrl: './demo-pipes.component.html'
 })
 export class DemoPipesComponent {
     today = new Date();
     val = 123.45;
 
-    constructor(private session: SessionService) {}
+    constructor(private sessionService: SessionService) {}
 
     norway() {
-        this.session.registerCulture('nb-NO');
+        this.sessionService.registerCulture('nb-NO');
         this.refreshValues();
     }
 
     sweden() {
-        this.session.registerCulture('sv-SE');
+        this.sessionService.registerCulture('sv-SE');
         this.refreshValues();
     }
 

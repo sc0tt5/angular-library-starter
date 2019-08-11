@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { LocalDatePipe } from './local-date.pipe';
 
 @NgModule({
-    declarations: [LocalDatePipe]
+    declarations: [LocalDatePipe],
+    exports: [LocalDatePipe]
 })
 export class LocalDateModule {}
