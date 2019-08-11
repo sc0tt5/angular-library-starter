@@ -10,8 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lib:version": "npm version patch --prefix projects/my-lib",
-    "lib:start": "rimraf dist/my-lib && ng build my-lib  --watch",
-    "lib:build": "rimraf dist/my-lib && ng build my-lib",
+    "lib:start": "rimraf dist/my-lib && ng build my-lib --watch",
+    "lib:build": "rimraf dist && ng build my-lib",
     "lib:pack": "cd dist/my-lib && npm pack",
     "lib:install": "npm install dist/my-lib",
     "lib": "npm run lib:build && npm run lib:pack && npm run lib:install"
