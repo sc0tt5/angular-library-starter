@@ -16,7 +16,8 @@
         "lib:build": "rimraf dist && ng build my-lib",
         "lib:pack": "cd dist/my-lib && npm pack",
         "lib:install": "npm install dist/my-lib",
-        "lib": "npm run lib:build && npm run lib:pack && npm run lib:install"
+        "lib:styles": "cpx \"./projects/my-lib/src/lib/assets/styles/**/*.scss\" \"./dist/my-lib/assets/styles/\"",
+        "lib": "npm run lib:build && npm run lib:styles && npm run lib:pack && npm run lib:install"
     },
     "private": true,
     "dependencies": {
@@ -47,6 +48,7 @@
         "@types/node": "~8.9.4",
         "bootstrap": "4.1.1",
         "codelyzer": "^5.0.0",
+        "cpx": "^1.5.0",
         "jasmine-core": "~3.4.0",
         "jasmine-spec-reporter": "~4.2.1",
         "karma": "~4.1.0",
