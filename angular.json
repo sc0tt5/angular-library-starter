@@ -27,7 +27,7 @@
                         "styles": ["src/styles.scss"],
                         "scripts": [],
                         "stylePreprocessorOptions": {
-                            "includePaths": ["/dist/my-lib/assets/styles/"]
+                            "includePaths": ["@my-lib/components/assets/styles"]
                         }
                     },
                     "configurations": {

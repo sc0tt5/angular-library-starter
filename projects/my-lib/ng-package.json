@@ -3,6 +3,9 @@
     "dest": "../../dist/my-lib",
     "lib": {
         "entryFile": "src/public-api.ts",
-        "styleIncludePaths": ["src/lib/styles/app", "src/lib/styles/vendor"]
+        "umdModuleIds": {
+            "@fortawesome/free-solid-svg-icons": "fontawesome-icons",
+            "@fortawesome/angular-fontawesome": "fontawesome"
+        }
     }
 }
