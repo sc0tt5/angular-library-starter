@@ -1,10 +1,11 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'my-button-b',
-    changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './button-b.component.html',
-    styleUrls: ['./button-b.component.scss']
+    styleUrls: ['./button-b.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ButtonBComponent {
     @Input() message: string;

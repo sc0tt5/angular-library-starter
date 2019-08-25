@@ -27,7 +27,10 @@
                         "styles": ["src/styles.scss"],
                         "scripts": [],
                         "stylePreprocessorOptions": {
-                            "includePaths": ["@my-lib/components/assets/styles"]
+                            "includePaths": [
+                                "./node_modules/@my-lib/components/assets/styles",
+                                "./node_modules/bootstrap/scss"
+                            ]
                         }
                     },
                     "configurations": {

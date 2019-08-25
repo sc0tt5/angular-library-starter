@@ -3,7 +3,10 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
 @Component({
     selector: 'my-accordion',
     templateUrl: './accordion.component.html',
-    styleUrls: ['./accordion.component.scss'],
+    styleUrls: [
+        './accordion.component.scss',
+        '../../../../../../node_modules/ngx-bootstrap/accordion/accordion.css'
+    ],
     encapsulation: ViewEncapsulation.None,
     changeDetection: ChangeDetectionStrategy.OnPush
 })

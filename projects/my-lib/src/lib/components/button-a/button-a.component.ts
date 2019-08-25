@@ -1,11 +1,12 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'my-button-a',
-    changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './button-a.component.html',
-    styleUrls: ['./button-a.component.scss']
+    styleUrls: ['./button-a.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ButtonAComponent {
     faCoffee = faCoffee;
