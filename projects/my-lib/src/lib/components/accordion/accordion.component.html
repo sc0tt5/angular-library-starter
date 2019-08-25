@@ -1,11 +1,14 @@
-<accordion>
-    <accordion-group heading="Content 1">
-        <p>accordion 1</p>
-    </accordion-group>
-    <accordion-group heading="Initially expanded" [isOpen]="'isFirstOpen'">
-        This content is straight in the template.
-    </accordion-group>
-    <accordion-group heading="Content 2">
-        <p>accordion 3</p>
+<accordion [isAnimated]="true">
+    <accordion-group
+        *ngFor="let a of accordionJson; let i = index"
+        [isOpen]="a.isOpen"
+        (isOpenChange)="updateOpen($event, i)"
+    >
+        <span accordion-heading>
+            {{ a.heading }}
+            <fa-icon *ngIf="a.isOpen" [icon]="faPlus" pull="right"></fa-icon>
+            <fa-icon *ngIf="!a.isOpen" [icon]="faMinus" pull="right"></fa-icon>
+        </span>
+        <p>{{ a.content }}</p>
     </accordion-group>
 </accordion>
