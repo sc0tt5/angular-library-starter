@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 
 // routes
 export const ROUTES: Routes = [
     { path: '', pathMatch: 'full', redirectTo: 'button-a' },
+    {
+        path: 'accordion',
+        loadChildren: () =>
+            import('./demo-accordion/demo-accordion.module').then(m => m.DemoAccordionModule)
+    },
     {
         path: 'button-a',
         loadChildren: () =>
@@ -24,7 +30,7 @@ export const ROUTES: Routes = [
 
 @NgModule({
     declarations: [AppComponent],
-    imports: [BrowserModule, RouterModule.forRoot(ROUTES)],
+    imports: [BrowserModule, BrowserAnimationsModule, RouterModule.forRoot(ROUTES)],
     bootstrap: [AppComponent]
 })
 export class AppModule {}

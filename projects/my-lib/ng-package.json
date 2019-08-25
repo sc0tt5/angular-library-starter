@@ -5,7 +5,12 @@
         "entryFile": "src/public-api.ts",
         "umdModuleIds": {
             "@fortawesome/free-solid-svg-icons": "fontawesome-icons",
-            "@fortawesome/angular-fontawesome": "fontawesome"
-        }
+            "@fortawesome/angular-fontawesome": "fontawesome",
+            "ngx-bootstrap": "ngx-bootstrap"
+        },
+        "styleIncludePaths": [
+            "../../node_modules/ngx-bootstrap/accordion",
+            "../../node_modules/bootstrap/scss"
+        ]
     }
 }
