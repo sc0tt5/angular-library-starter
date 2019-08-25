@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@angular/core';
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'my-accordion',
@@ -7,4 +8,12 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
     encapsulation: ViewEncapsulation.None,
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AccordionComponent {}
+export class AccordionComponent {
+    faPlus = faPlus;
+    faMinus = faMinus;
+    @Input() accordionJson: Array<any>;
+
+    updateOpen(isOpen: boolean, index: number) {
+        this.accordionJson[index].isOpen = isOpen;
+    }
+}
