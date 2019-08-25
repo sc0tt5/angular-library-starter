@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared.module';
 
 // routes
 export const ROUTES: Routes = [
@@ -30,7 +31,7 @@ export const ROUTES: Routes = [
 
 @NgModule({
     declarations: [AppComponent],
-    imports: [BrowserModule, BrowserAnimationsModule, RouterModule.forRoot(ROUTES)],
+    imports: [BrowserModule, BrowserAnimationsModule, RouterModule.forRoot(ROUTES), SharedModule],
     bootstrap: [AppComponent]
 })
 export class AppModule {}
