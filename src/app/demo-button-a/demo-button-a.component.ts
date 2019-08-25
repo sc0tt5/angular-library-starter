@@ -3,9 +3,9 @@ import { CommonService } from 'my-lib';
 
 @Component({
     selector: 'demo-button-a',
-    changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './demo-button-a.component.html',
-    styleUrls: ['./demo-button-a.component.scss']
+    styleUrls: ['./demo-button-a.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DemoButtonAComponent implements OnInit {
     text = 'testing A';

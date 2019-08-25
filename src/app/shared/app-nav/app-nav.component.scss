@@ -1,0 +1,15 @@
+.app-nav {
+    a {
+        color: rgb(24, 24, 24);
+        padding: 15px 5px;
+        display: inline-block;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+            color: rgb(117, 117, 117);
+        }
+    }
+}
