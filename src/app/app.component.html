@@ -1,5 +1,14 @@
-<demo-app-nav></demo-app-nav>
+<!-- main content -->
+<main role="main">
+    <div class="page__container">
+        <!-- navigation -->
+        <demo-app-nav></demo-app-nav>
 
-<div class="wrapper">
-    <router-outlet></router-outlet>
-</div>
+        <!-- components -->
+        <div class="component__container">
+            <div class="component__content">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</main>
