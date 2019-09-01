@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SessionService } from 'my-lib';
+import { SessionService } from '@my-lib/components';
 
 @Component({
     selector: 'demo-pipes',

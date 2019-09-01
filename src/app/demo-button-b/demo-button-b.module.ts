@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ButtonBModule } from 'my-lib';
+import { ButtonBModule } from '@my-lib/components';
 import { DemoButtonBComponent } from './demo-button-b.component';
 
 // routes

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AccordionModule } from 'my-lib';
+import { AccordionModule } from '@my-lib/components';
 import { DemoAccordionComponent } from './demo-accordion.component';
 
 // routes

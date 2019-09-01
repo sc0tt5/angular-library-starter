@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LocalDateModule, LocalNumberModule } from 'my-lib';
+import { LocalDateModule, LocalNumberModule } from '@my-lib/components';
 import { DemoPipesComponent } from './demo-pipes.component';
 
 // routes

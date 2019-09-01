@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { CommonService } from 'my-lib';
+import { CommonService } from '@my-lib/components';
 
 @Component({
     selector: 'demo-button-b',
